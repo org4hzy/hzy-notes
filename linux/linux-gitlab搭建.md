@@ -46,7 +46,7 @@ sudo docker run -d -p 9999:5000 -v /opt/registry:/var/lib/registry --restart=alw
 golang  dotnet	// 先 tag  再push
 ```
 
-# redis on docker
+* redis on docker
 ```s
 sudo docker run --name redis-cache --restart=always -p 6379:6379 -v /srv/redis:/data/redis -d server redis-server --appendonly yes
 ```
