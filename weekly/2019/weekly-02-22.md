@@ -11,17 +11,17 @@
 原代码设计
 ```go
 // keepCnt [0,5], 越界为-1 ？
-func (t *Table)init() {
+func (t *Table) init() {
     t.keepCnt = 0 
 }
 
-func (t *Table)ThrowInto(player *gplayer.Player) {
+func (t *Table) ThrowInto(player *gplayer.Player) {
     //throw into success ...
     t.keepCnt++
     // do other things ...
 }
 
-func (t *Table)ThrowOff(player *gplayer.Player) {
+func (t *Table) ThrowOff(player *gplayer.Player) {
     //throw off check success ...
     t.keepCnt--
     // do other things...

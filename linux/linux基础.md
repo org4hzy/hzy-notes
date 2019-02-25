@@ -44,7 +44,7 @@ ubuntu  : apt install openssh-server
 * 查看sshd 服务状态 service sshd status .
 用MobaXterm root登录，需要修改sshd的配置.
 
-vim  etc/ssh/sshd_config
+vim  /etc/ssh/sshd_config
 PermitRootLogin yes 允许root远程登录
 PermitEmptyPasswords yes 允许无密码登录
 
