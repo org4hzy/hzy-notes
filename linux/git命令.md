@@ -1,9 +1,9 @@
 # Git
 基本流程:
 [Remote] -> fetch/clone( <- push) [Repository] -> checkout ( <- commit  [Stage] <- add ) (pull from Remote) [workspace]
-![git流程](https://github.com/org4hzy/hzy-notes/pic/git_chart.png)
+![git流程](https://github.com/org4hzy/hzy-notes/blob/master/pic/git_chart.png)
 
-* 配置
+#### 配置
 ```
 git config --list #显示当前配置
 git config --global user.name 'huangzy'
@@ -13,14 +13,14 @@ git config --global user.email '123@qq.com'
 git config --global http.sslverify false
 ```
 
-* 新建
+#### 新建
 ```
 git init 
 git init [project-name]
 git clone [url]
 ```
 
-* 增删
+#### 增删
 ```
 git add [file1] [file2] ...
 
@@ -39,7 +39,7 @@ git rm [file]
 git mv [file-org] [file-renamed]
 ```
 
-* 提交
+#### 提交
 ```
 # 当前目录所有文件 
 git commit -a -m "comments ..."
@@ -51,7 +51,7 @@ git commit -v
 git commit --amend -m "new comments"
 ```
 
-* 分支
+#### 分支
 ```
 #all branchs
 git branch -r
@@ -62,7 +62,7 @@ git branch [branch-name]
 #新建一个分支并切换到分支
 git checkout -b [branch]
 
-# 合并
+#合并
 git merge [branch] 
 
 # 删除
@@ -71,14 +71,14 @@ git push origin --delete [branch]
 git branch -dr [remote/branch]
 ```
 
-* 标签
+#### 标签
 ```
 git tag [tag] [commit]
 
 git tag -d [tag]
 ```
 
-* 状态
+#### 状态
 ```
 git status
 
@@ -93,14 +93,14 @@ git diff
 git shortlog -sn
 ```
 
-* 远程操作
+#### 远程操作
 ```
 git remote -v
 
 git push --all --force
 ```
 
-* 撤销
+#### 撤销
 ```
 git reset --hard [commit]
 
