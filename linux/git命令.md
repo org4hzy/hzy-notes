@@ -1,6 +1,8 @@
 # Git
 基本流程:
+```
 [Remote] -> fetch/clone( <- push) [Repository] -> checkout ( <- commit  [Stage] <- add ) (pull from Remote) [workspace]
+```
 ![git流程](https://github.com/org4hzy/hzy-notes/blob/master/pic/git_chart.png)
 
 #### 配置

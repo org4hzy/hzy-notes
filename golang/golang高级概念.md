@@ -1,6 +1,6 @@
-# ????
+# 高级语法
 
-* ??
+* 初始化
 ```go
 func init() {
     cfg := flag.String("cfg", "", "config path")
@@ -13,10 +13,9 @@ func main() {
 }
 ```
 
-* ??
-?Go?????????????(????)
+*  闭包函数
+
 ```go
-    // ????
     func MakeAndSuffix(su string) func(string)string {
         return func(name string) string {
             if !strings.HasSuffix(name, su) {
@@ -27,18 +26,16 @@ func main() {
     }
 
     func main() {
-        // ????
-        addJpg := MakeAndSuffix(".jpg") //..????
-        addZip := MakeAndSuffix(".zip") //..????
+        addJpg := MakeAndSuffix(".jpg") 
+        addZip := MakeAndSuffix(".zip") 
 
         log.Printf("%s %s %s %s", addJpg("test"), addZip("a.zip"), addZip("b"), addZip("b.zi"))
     }
 ```
 
-* ??/??? 
+* 结构对象
 
 ```go
-    //?????????????
     type Player struct {
         Id  int64
         name string
@@ -53,14 +50,11 @@ func main() {
     }
 
     type GamePlayer struct {
-        Player      //??
-        GameData    //??
-        items   map[int64]int64 //??
-        TableID int32   //??
-        ChairID int32   //??
+        Player      //嵌套
+        GameData    //嵌套
+        items   map[int64]int64 // 成员
+        TableID int32   // 导出成员
+        ChairID int32   // 导出成员
     }
-
 ```
-
-* ??
 
