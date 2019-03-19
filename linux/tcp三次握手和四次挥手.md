@@ -25,7 +25,7 @@ SYN - 标记位 同步序号 synchronization
 ```
 
 ### TCP四次挥手
-![TCP四次挥手](https://github.com/org4hzy/hzy-notes/blob/master/pic/tcp四次挥手.png)
+![TCP四次挥手](https://github.com/org4hzy/hzy-notes/blob/master/pic/tcp四次挥手.jpg)
 
 * 过程
 ```
